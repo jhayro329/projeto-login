@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" >
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -17,7 +18,22 @@
         <div id="formulario">
          <h1>Login</h1>
          <P>Seja Bem-Vindo(a) Novamente.faça login para acessar sua conta e poder e poder fazer as configuraçõaes no seu ambiente.</P>
-         <form action="login" method="post">
+
+         <form action="login" method="post" autocomplete="on">
+
+        <div class="campo">
+               <span class="material-symbols-outlined">person</span>           
+              <input type="email" name="email" id="iemail" placeholder="seu email aqui..." autocomplete="email" required maxlength="30">
+              <label type="ilogin">login</label>
+        </div>
+
+        <div class="campo">
+               <span class="material-symbols-outlined">key</span>
+                <input type="password" name="senha" id="isenha" placeholder="digite sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                <label for="isenha">senha</label>
+        </div>
+                <input type="submit" value="entrar">
+                <a href="esqueci.html">Esqueci a senha <span class="material-icones">mail</span> </a>
 
          </form>
         </div>
